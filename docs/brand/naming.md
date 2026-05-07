@@ -78,10 +78,18 @@ Tagline options:
 - Review, CI, and agent context on one plane.
 - A calmer forge for shipping code.
 
+First-pass DNS check on 2026-05-07:
+
+- `patchplane.com` resolves to A records, so assume it is already registered or parked.
+- `getpatchplane.com` returned no DNS response.
+- `patchplane.dev` returned no DNS response.
+- `patchplane.app` returned no DNS response.
+- `patchplane.sh` returned no DNS response.
+
 Domain strategy:
 
-- Check `patchplane.com` first.
-- Fallbacks: `patchplane.dev`, `getpatchplane.com`, `patchplane.app`, `patchplane.sh`.
+- Check registrar availability for `patchplane.dev`, `getpatchplane.com`, `patchplane.app`, and `patchplane.sh`.
+- Treat `patchplane.com` as likely acquired-only unless a registrar proves otherwise.
 - Handles: `patchplane`, `patchplanehq`, `getpatchplane`.
 
 Required before public launch:
